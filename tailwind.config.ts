@@ -53,14 +53,16 @@ const config: Config = {
         },
       },
       borderRadius: {
+        "xl": "1.25rem",
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
       fontFamily: {
         sans: [
-          "'Inter'",
+          "'InterVariable'",
           "'Manrope'",
+          "'Inter'",
           "-apple-system",
           "BlinkMacSystemFont",
           "Segoe UI",
@@ -74,8 +76,19 @@ const config: Config = {
           "sans-serif",
         ].join(", "),
       },
+      fontWeight: {
+        extrablack: 900,
+      },
       boxShadow: {
-        "accent-lg": "0 6px 32px 0 rgb(123 97 255 / 14%)",
+        "accent-lg": "0 8px 38px 0 rgb(123 97 255 / 14%)",
+        "glass": "0 8px 38px 0 rgb(27 42 58 / 6%)",
+      },
+      backgroundImage: {
+        "section-gradient": "linear-gradient(135deg, #f7f9fb 60%, #e6eaff 100%)",
+        "cta-gradient": "linear-gradient(90deg, #7b61ff 10%, #1b2a3a 90%)",
+      },
+      transitionTimingFunction: {
+        "expo": "cubic-bezier(0.19,1,0.22,1)",
       },
     },
   },
